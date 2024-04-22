@@ -142,6 +142,7 @@ vim /etc/nginx/sites-enabled/default
 nginx -t
 ```
 ![1.png](1.png)
+
 5. 重启服务
 ```
 systemctl reload nginx
@@ -151,6 +152,7 @@ systemctl reload nginx
 acme.sh --issue -d a.example.com --nginx
 ```
 ![2.png](2.png)
+
 7. 启动trojan-go服务（**这里启动失败也不管他，为了下个步骤的重启不报错使用的**）
 ```
 systemctl start trojan-go
