@@ -41,6 +41,7 @@ unzip trojan-go-linux-amd64.zip -d /etc/trojan-go
 cp /etc/trojan-go/example/server.json /etc/trojan-go
 ```
 - 修改配置信息，我的配置信息如下。具体参数可以参照官网修改。如果使用我的配置文件注意修改下面配置文件中的中文标识，域名不含http字符如：a.example.com
+- 如果不使用cdn的情况下shadowsocks可以改为false
 ``` json
 {
     "run_type": "server",
@@ -66,7 +67,7 @@ cp /etc/trojan-go/example/server.json /etc/trojan-go
 		"idle_timeout": 60
 	},
 	"shadowsocks": {
-        "enabled": true,  #不使用cdn可以关闭
+        "enabled": true,  
         "method": "CHACHA20-IETF-POLY1305",
         "password": "你的密码"
     },
