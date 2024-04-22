@@ -54,7 +54,7 @@ cp /etc/trojan-go/example/server.json /etc/trojan-go
     "password": [
         "你的密码"
     ],
-    "ssl": {
+	"ssl": {
 		"verify": true,
 		"fingerprint": "firefox",
         "cert": "/etc/trojan-go/server.crt",
