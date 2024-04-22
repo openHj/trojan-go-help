@@ -44,46 +44,46 @@ cp /etc/trojan-go/example/server.json /etc/trojan-go
 - 如果不使用cdn的情况下shadowsocks可以改为false
 ``` json
 {
-    "run_type": "server",
-    "local_addr": "0.0.0.0",
-    "local_port": 443,
-    "remote_addr": "127.0.0.1",
-    "remote_port": 80,
+	"run_type": "server",
+	"local_addr": "0.0.0.0",
+	"local_port": 443,
+	"remote_addr": "127.0.0.1",
+	"remote_port": 80,
 	"log_level": 1,
 	"log_file": "/etc/trojan-go/runtime.log",
-    "password": [
-        "你的密码"
-    ],
+	"password": [
+		"你的密码"
+	],
 	"ssl": {
 		"verify": true,
 		"fingerprint": "firefox",
-        "cert": "/etc/trojan-go/server.crt",
-        "key": "/etc/trojan-go/server.key",
-        "sni": "你的域名"
-    },
+		"cert": "/etc/trojan-go/server.crt",
+		"key": "/etc/trojan-go/server.key",
+		"sni": "你的域名"
+	},
 	"mux": {
 		"enabled": true,
 		"concurrency": 8,
 		"idle_timeout": 60
 	},
 	"shadowsocks": {
-        "enabled": true,  
-        "method": "CHACHA20-IETF-POLY1305",
-        "password": "你的密码"
-    },
+		"enabled": true,  
+		"method": "CHACHA20-IETF-POLY1305",
+		"password": "你的密码"
+	},
 	"websocket": {
-        "enabled": true,
-        "path": "/随机路径",
-        "host": "你的域名"
-    },
-    "router": {
-        "enabled": false,
-        "block": [
-            "geoip:private"
-        ],
-        "geoip": "/etc/trojan-go/geoip.dat",
-        "geosite": "/etc/trojan-go/geosite.dat"
-    }
+		"enabled": true,
+		"path": "/随机路径",
+		"host": "你的域名"
+	},
+	"router": {
+		"enabled": false,
+		"block": [
+			"geoip:private"
+		],
+		"geoip": "/etc/trojan-go/geoip.dat",
+		"geosite": "/etc/trojan-go/geosite.dat"
+	}
 }
 
 ```
