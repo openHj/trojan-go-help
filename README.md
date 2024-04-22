@@ -148,7 +148,11 @@ systemctl reload nginx
 ```
 acme.sh --issue -d a.example.com --nginx
 ```
-7. 安装证书
+7. 启动trojan-go服务（**这里启动失败也不管他，为了下个步骤的重启不报错使用的**）
+```
+systemctl start trojan-go
+```
+9. 安装证书
 ```
 acme.sh --installcert -d a.example.com --key-file /etc/trojan-go/server.key --fullchain-file /etc/trojan-go/server.crt --reloadcmd  "systemctl restart trojan-go"
 ```
