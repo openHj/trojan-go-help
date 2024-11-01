@@ -165,4 +165,18 @@ acme.sh --installcert -d a.example.com --key-file /etc/trojan-go/server.key --fu
 - 使用`systemctl status trojan-go` 查看是否运行正常
 - 用https打开域名查看是否能正常访问
 
+# 关于chat经常断线要刷新页面问题的解决方案
+## 安装WARP
+1. 运行脚本
+```
+wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh [option] [lisence/url/token]
+```
+2. 选择顺序
+v4双栈
+go版本
+优先级使用v4或者默认都可以
+
 # 配置客户端
+XXXXXX
+# 
+
