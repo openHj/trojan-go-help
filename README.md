@@ -166,7 +166,7 @@ acme.sh --installcert -d a.example.com --key-file /etc/trojan-go/server.key --fu
 - 用https打开域名查看是否能正常访问
 
 # 关于chat经常断线要刷新页面问题的解决方案
-## 安装WARP
+## 目前测试安装WARP可以完美解决该问题
 1. 运行脚本
 ```
 wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh [option] [lisence/url/token]
@@ -177,6 +177,7 @@ go版本
 优先级使用v4或者默认都可以
 
 # 配置客户端
-XXXXXX
+windows 使用项目原生客户端，搭配nssm进行服务创建。
+浏览器安装插件Proxy SwitchyOmega
 # 
 
